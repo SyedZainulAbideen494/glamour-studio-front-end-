@@ -1,0 +1,46 @@
+.notification-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-modal {
+    position: absolute;
+    top: 40px; /* Adjust top position */
+    right: 0;
+    z-index: 1000;
+    width: 400px; /* Adjust width as needed */
+    max-height: 400px; /* Maximum height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #121212;
+    border: 1px solid #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .notification-modal h3 {
+    margin-top: 0;
+  }
+  
+  .notification-modal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-modal ul li {
+    padding: 8px 0;
+  }
+  

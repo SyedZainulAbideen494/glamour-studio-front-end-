@@ -1,0 +1,81 @@
+/* Container for My Events */
+.my-events-container {
+    background-color: #121212;
+    color: #ffffff; /* White text for better readability */
+    padding: 20px;
+    max-width: 800px; /* Limiting the maximum width */
+    margin: 10px auto; /* Center aligning the container */
+    border-radius: 25px;
+    font-size: 16px; /* Set base font size */
+    line-height: 1.6; /* Set line height for better readability */
+  }
+  
+  .my-events-container h2 {
+    color: #ffffff; /* White text for headings */
+    margin-bottom: 10px; /* Space between headings and event cards */
+  }
+  
+  /* Flexbox layout for event cards */
+  .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute cards evenly */
+  }
+  
+  /* Styling for individual event cards */
+ /* Styling for individual event cards */
+.event-card {
+    background-color: #1f1f1f; /* Darker background */
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px; /* 50% width minus margin */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .event-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem; /* Larger heading font size */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  .event-card p {
+    margin: 5px 0;
+    font-size: 1rem; /* Base font size for details */
+    line-height: 1.4; /* Line height for readability */
+  }
+  
+  .event-card button {
+    margin-top: auto; /* Push button to the bottom */
+    background-color: #ffffff;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  
+  .event-card button:hover {
+    background-color: #121212;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  }
+  /* Dim inactive event cards */
+  .event-card.inactive {
+    opacity: 0.5;
+    pointer-events: none; /* Disable interaction with inactive cards */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .event-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
